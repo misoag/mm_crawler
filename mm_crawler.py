@@ -5,14 +5,13 @@ import sys
 import os
 import re
 import urllib
-import urllib2
 import urlparse
-import subprocess
 import threading
 import helper
 
 sys.path.append("threadpool/src")
-from threadpool import *
+from threadpool import ThreadPool
+from threadpool import WorkRequest
 
 class MMCrawler:
 
